@@ -5,7 +5,7 @@
 - Install
 
 ```
-npm installcypress --save-dev
+npm install cypress --save-dev
 ```
 
 - Execute runner
@@ -25,5 +25,14 @@ Opening Cypress...
 ## RUNNERS
 
 Interface web for execute test
+
+## SUITE CATEGORIES
+
+![Screen Cypress](./image1.png)
+
+### Feature
+
+- Contiene los describe 
+- Cada describe tiene casos a ejecutar
 
 
