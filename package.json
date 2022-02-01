@@ -4,7 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm start & cypress run",
+    "e2e": "cypress run",
+    "e2e:chrome": "cypress run --browser chrome",
+    "e2e:record": "cypress run --record",
+    "e2e:record:parallel": "cypress run --record --parallel",
+    "cy:cli": "node_modules/.bin/cypress open",
+    "cy:verify": "cypress verify",
+    "cy:version": "cypress version",
+    "cy:run": "cypress run",
+    "cy:run:record": "cypress run --record",
+    "cy:open": "cypress open",
+    "local:open": "start-test 8080 cy:open",
+    "local:run": "start-test 8080 cy:run",
+    "local:run:record": "start-test 8080 cy:run:record",
+    "stop-only": "stop-only -f cypress/integration",
+    "warn-only": "stop-only -f cypress/integration --warn"
   },
   "keywords": [],
   "author": "",

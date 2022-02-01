@@ -4,13 +4,14 @@
 
 - Install
 
-```
+```shell
 npm install cypress --save-dev
+
 ```
 
 - Execute runner
 
-```
+```shell
 ➜  $ node_modules/.bin/cypress open
 It looks like this is your first time using Cypress: 9.3.1
 
@@ -18,7 +19,10 @@ It looks like this is your first time using Cypress: 9.3.1
 
 Opening Cypress...
 ```
-
+or
+```shell
+npm run cy:open
+```
 ![Screen Cypress](./cypress-screen.png)
 
 

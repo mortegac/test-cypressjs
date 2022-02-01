@@ -1,3 +1,4 @@
+const addContext = require('mochawesome/addContext');
 
 // Suite de pruebas
 
@@ -5,13 +6,19 @@
 // cy.get('[href="/login"]').click()
 // cy.get('[name="session[username_or_email]"]').should('be visited')
 
+Cypress.on("test:after:run", (test, runnable) => {
+    if (test.state === "failed") {
+        const imageUrl = "?";
+        addContext({ test }, imageUrl);
+    }
+});
+
 describe('Test in Home Page', ()=>{
     // Caso 1
     // it es similar a describe
     it('Enter the Web Site', ()=>{
-        //step 1
-        //step ...
 
+        cy.viewport('iphone-x')
         cy.visit("https://app.riamoneytransfer.com")
     })
     
